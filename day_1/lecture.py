@@ -31,9 +31,16 @@ my_car = {
   "interest": 22
 }
 
+my_other_cars = {
+  "first_car" : my_car,
+  "second_car" : "honda civic",
+  "third_car" : 24
+
+}
 # Dictionary items are ordered, changeable, and does not allow duplicates.
 
 print(my_car)
+
 
 # Dictionary items are presented in key:value pairs, and can be referred to by using the key name.
 
@@ -79,6 +86,9 @@ your_car = {
   "colors": ["red", "white", "blue"]
 }
 
+you_car["brand"] = "Mazda"
+
+
 # Accessing Items
 # You can access the items of a dictionary by referring to its key name, inside square brackets:
 
@@ -87,7 +97,7 @@ your_car['brand']
 # and of course, by itself, it does nothing
 # so we want to assign it to a variable
 
-your_car_brand = your_car['brand']
+your_car_brand = your_car['brand'] #print(your_car_brand) will print out Toyota
 
 # why do we assign a variable from the dictionary
 # Instead of just typing out the string again?
@@ -105,6 +115,9 @@ print(type(key_list)) # <class 'dict_keys'>*
 
 # Get Values
 # The values() method will return a list of all the values in the dictionary.
+import xcel spreadsheet
+mysheet = xcel 
+
 
 value_list = your_car.values()
 print(value_list) # dict_values(['Toyota', 'Pruis', True, 2012, ['red', 'white', 'blue']])
